@@ -1,0 +1,33 @@
+{
+  "name": "recipez",
+  "productName": "Recipez",
+  "version": "0.0.0",
+  "description": "My mind-blowing app",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "erlandsona/recipez",
+  "author": {
+    "name": "Austin Erlandson",
+    "email": "austin@erlandson.com",
+    "url": "recipez.github.io"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . $npm_package_productName --prune --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --ignore=.git"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app"
+  ],
+  "devDependencies": {
+    "electron-packager": "^3.1.0",
+    "electron-prebuilt": "^0.25.1"
+  }
+}
